@@ -12,11 +12,10 @@ Designed with a minimal, soft-light aesthetic and includes smooth navigation bet
 ### 🌟 Main Page (Input Page)
 
 > Add your screenshot here  
-> ![Main Page Screenshot] (Javascript/Javascript-Projects/Tip-Calculator/main.png)
+> ![Main Page Screenshot](https://github.com/Umar-sfdc/Javascript/blob/288621b358731e5dfdc833c5404a61a80d41ba91/Javascript-Projects/Tip-Calculator/main.png)
 
 ### 🎉 Result Page (Output Page)
 
 > Add your screenshot here  
-> ![Result Page Screenshot](Javascript/Javascript-Projects/Tip-Calculator/calculate.png)
+> ![Result Page Screenshot]([Javascript/Javascript-Projects/Tip-Calculator/calculate.png](https://github.com/Umar-sfdc/Javascript/blob/288621b358731e5dfdc833c5404a61a80d41ba91/Javascript-Projects/Tip-Calculator/result.html))
 
-Create an `/images` folder and place your screenshots like:
