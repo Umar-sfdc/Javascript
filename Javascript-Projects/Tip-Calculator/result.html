@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Result</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-box">
+            <img src="assets/money.jpeg" alt="illustration" />
+        </div>
+
+        <div class="right-box">
+            <h1 class="title">Here's Your Tip!</h1>
+            <p id="result-text"></p>
+            <a href="index.html" class="btn secondary">Go Back</a>
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const amount = params.get("amount");
+        const tip = params.get("tip");
+        const total = params.get("total");
+
+        document.getElementById("result-text").innerHTML = `
+      Total Amount Entered: <strong>₹${amount}</strong> <br><br>
+      Tip to Pay: <strong>₹${Number(tip).toFixed(2)}</strong> <br><br>
+      Final Total: <strong>₹${Number(total).toFixed(2)}</strong>
+  `;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-box">
+            <img src="assets/money.jpeg" alt="illustration" />
+        </div>
+
+        <div class="right-box">
+            <h1 class="title">Tip Calculator</h1>
+
+            <div class="form-group">
+                <label>Total Amount</label>
+                <input type="number" id="amount" placeholder="Enter total amount" />
+            </div>
+
+            <div class="form-group">
+                <label>Tip Percentage (%)</label>
+                <input type="number" id="percentage" placeholder="Enter tip percent" />
+            </div>
+
+            <button onclick="calculateTip()" class="btn">Calculate</button>
+        </div>
+    </div>
+
+    <script>
+        function calculateTip() {
+            const amount = document.getElementById('amount').value;
+            const percent = document.getElementById('percentage').value;
+
+            if (amount === "" || percent === "") {
+                alert("Please fill both fields");
+                return;
+            }
+
+            const tip = (amount * percent) / 100;
+            const total = Number(amount) + tip;
+
+            // Navigate to result page with values
+            window.location.href = `result.html?amount=${amount}&tip=${tip}&total=${total}`;
+        }
+    </script>
+
+</body>
+
+</html>
